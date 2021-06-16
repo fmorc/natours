@@ -53,6 +53,8 @@ exports.getBookingCheckout = catchAsync(async (req, res, next) => {
   res.redirect(req.originalUrl.split('?')[0]);
 });
 
+exports.webhookCheckout = (req, res, next) => {};
+
 exports.getAllBookings = factory.getAll(Booking);
 exports.getBooking = factory.getOne(Booking);
 exports.createBooking = factory.createOne(Booking);
